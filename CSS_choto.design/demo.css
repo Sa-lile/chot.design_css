@@ -1,0 +1,277 @@
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px;
+  width: 120px;
+  padding: 0.5em 1em;
+}
+
+/* シンプルな浮き出しボタン
+影をつけて立体感を出し、浮き出ている雰囲気にしたベーシックなボタンです。 */
+.btn1{
+  background: #142c5b;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+/* ポストイット風
+ポストイット風のラベルっぽいデザインのボタンです。よく使用されているような気がします。 */
+
+.btn2{
+  background: #FFF;
+  border-left: solid 5px #142c5b;
+  color: #142c5b;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* グラデーション
+ベーシックなデザインにグラデーションをかけ、少し雰囲気を変えたボタンです。 */
+
+.btn3{
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, #98b8f7 0%, #142c5b 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: solid 3px #142c5b;
+}
+
+/* ステッチラベル
+ステッチが入ったラベルっぽい雰囲気のボタンです。カジュアルなデザインに合いそうです。 */
+
+.btn4{
+  background-color: #142c5b;
+  border: 1px dashed #FFF;
+  box-shadow: 0px 0px 0px 5px #142c5b;
+}
+
+/* 平行四辺形
+斜めに切ったような平行四辺形のボタンです。こういった少し変わった形もたまに目にしますね。 */
+
+.btn5{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  background: #142c5b;
+  transition: .4s;
+  padding: 0;
+}
+
+.btn5:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 21px white;
+  border-bottom: solid 41px transparent;
+  z-index: 1;
+  transition: .4s;
+}
+
+.btn5:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 21px transparent;
+  border-bottom: solid 41px white;
+  z-index: 1;
+  transition: .4s;
+}
+
+/* パッチワーク風
+縦横のボーダーを交差させてパッチワークな雰囲気を出したボタンです。 */
+
+.btn6{
+  position: relative;
+  border-top: solid 3px #142c5b;
+  border-bottom: solid 3px #142c5b;
+  color: #142c5b;
+}
+.btn6:before, .btn6:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 3px;
+  height: calc(100% + 14px);
+  background-color: #142c5b;
+  transition: .3s;
+}
+.btn6:before {
+  left: 7px;
+}
+.btn6:after {
+  right: 7px;
+}
+
+/* ピアノ(?)風
+ピアノっぽい雰囲気のボタンを作ろうとしたのですが定規っぽくなってしまったような気がしてます・・・。 */
+.btn7{
+  position: relative;
+  background: #142c5b;
+}
+.btn7:before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  height: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  top: 100%;
+   top: calc(100% - 2px);
+  left: 0;
+  background: linear-gradient(-90deg, #142c5b 1px, transparent 0) 0 1px,
+              linear-gradient(90deg, #142c5b 5px, #fff 0) 0 1px;
+  background-color: #142c5b;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+  transition: .2s;
+}
+
+
+h2{
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0.5em;
+  margin: 70px;
+  color: #494949;
+}
+
+/* シンプルアイコン */
+/* 見出しテキストの前にアイコンを設置した汎用性の高いシンプルな見出しです。 */
+.midashi1 {
+  position: relative;
+  border: 1px solid #142c5b;
+  padding: 7px 0 7px 35px;
+}
+
+.midashi1:after {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  z-index: 2;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #142c5b;
+}
+
+/* フキダシ風 */
+/* 情報系の記事はもちろん、コーポレートサイトなど割と色々なWebサイトで使用されているフキダシ風の見出しです */
+.midashi2{
+  position: relative;
+  background: #142c5b;
+  color: #FFF;
+}
+
+.midashi2:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #142c5b;
+  width: 0;
+  height: 0;
+}
+
+ /* ポストイット風  */
+/* ポストイットっぽいラベル風のデザインです。こちらも汎用性が高そうです。 */
+
+.midashi3 {
+  background: #FCFCFC;
+  border-left: solid 5px #142c5b;
+  border-bottom: solid 3px #d7d7d7;
+}
+
+/* ブックマーク風 */
+/* ブログなどの記事ページに使いやすそうなタグ風の見出しです。 */
+.midashi4{
+  background: #142c5b;
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;
+  color: #FFF;
+}
+
+.midashi4:before {
+  content: '●';
+  color: #FFF;
+  margin-right: 8px;
+}
+
+/* リボン風 */
+/* シンプルなリボン風デザインの見出しです。華やかな印象になりますね。 */
+.midashi5 {
+  position: relative;
+  background-color: #ccc;
+}
+.midashi5 span {
+  display: block;
+  padding: .75em 1em;
+  border: 1px dashed #FFF;
+}
+.midashi5:before,
+.midashi5:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+.midashi5:before {
+  top: 100%;
+  left: 0;
+  border-width: 0 15px 15px 0;
+  border-right-color: #ccc;
+}
+.midashi5:after {
+  top: -15px;
+  right: 0;
+  border-style: solid;
+  border-width: 0 15px 15px 0;
+  border-bottom-color: #ccc;
+}
+
+/* ステッチラベル */
+/* ステッチが入ったラベル風のデザインです。左上のドッグイヤーがポイントです。 */
+.midashi6 {
+  position: relative;
+  background: #142c5b;
+  box-shadow: 0px 0px 0px 5px #142c5b;
+  border: dashed 2px white;
+  color: #FFF;
+}
+
+.midashi6:after {
+  position: absolute;
+  content: '';
+  left: -7px;
+  top: -7px;
+  border-width: 0 0 15px 15px;
+  border-style: solid;
+  border-color: #FFF #FFF #a8d4ff;
+}
+/* 小見出し付き */
+/* 左上に小見出しを付けたデザインです。ブログ記事等の中見出しにちょうど良さそうですね。 */
+.midashi7 {
+	position:relative;
+	border:1px solid #142c5b;
+}
+.midashi7:after{
+	content: "midashi";
+	position: absolute;
+	top: -25px;
+	left: 10px;
+	background: #FFF;
+	font-size: 12px;
+	color: #142c5b;
+	padding: 0 10px;
+}
